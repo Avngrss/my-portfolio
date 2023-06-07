@@ -4,35 +4,35 @@ import { FaBars, FaTimes, FaLinkedin, FaGithub, FaTelegram } from "react-icons/f
 import flagrussia from "../assets/flagrussia.png";
 import flagengland from "../assets/flagvelikobritanii.png";
 
-const Navbar = () => {
+const Navbar = ({ changelanguage, t }) => {
   const [openMenu, setOpenMenu] = React.useState(false);
   const ShowMenu = () => setOpenMenu(!openMenu);
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-200">
       <div className="flex items-center justify-between gap-4">
-        <img height="30px" width="30px" src={flagrussia} alt="flagrussia" />
-        <img height="30px" width="30px" src={flagengland} alt="flagengland" />
+        <img className="cursor-pointer hover:scale-150 duration-500" onClick={() => changelanguage("ru")} height="30px" width="30px" src={flagrussia} alt="flagrussia" />
+        <img className="cursor-pointer hover:scale-150 duration-500" onClick={() => changelanguage("en")} height="30px" width="30px" src={flagengland} alt="flagengland" />
       </div>
       <div className="hidden md:flex rounded-bl-full bg-[#2F4F4F]">
         <ul className="hidden md:flex">
           <li className="hover:text-red-500">
             <Link to="home" smooth={true} duration={500}>
-              Home
+              {t("Home")}
             </Link>
           </li>
           <li className="hover:text-red-500">
             <Link to="about" smooth={true} duration={500}>
-              About
+              {t("About")}
             </Link>
           </li>
           <li className="hover:text-red-500">
             <Link to="skills" smooth={true} duration={500}>
-              Skills
+              {t("Skills")}
             </Link>
           </li>
           <li className="hover:text-red-500">
             <Link to="works" smooth={true} duration={500}>
-              Works
+              {t("Works")}
             </Link>
           </li>
         </ul>
@@ -45,22 +45,22 @@ const Navbar = () => {
       <ul className={!openMenu ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
         <li className="py-6 text-4xl">
           <Link onClick={ShowMenu} to="home" smooth={true} duration={500}>
-            Home
+            {t("Home")}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={ShowMenu} to="about" smooth={true} duration={500}>
-            About
+            {t("About")}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={ShowMenu} to="skills" smooth={true} duration={500}>
-            Skills
+            {t("Skills")}
           </Link>
         </li>
         <li className="py-6 text-4xl">
           <Link onClick={ShowMenu} to="works" smooth={true} duration={500}>
-            Works
+            {t("Works")}
           </Link>
         </li>
       </ul>

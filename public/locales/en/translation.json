@@ -1,0 +1,22 @@
+{
+  "Home": "Main",
+  "About": "About",
+  "Skills": "Skills",
+  "Works": "Works",
+  "text": "Hello, my name is",
+  "name": "Yurii",
+  "junior": "I'm a Junior Frontend Devoloper",
+  "info": "i'm learning JavaScript and React.I develop the skills that needs a front-end developer.I want to find a job with the opportunity to further develop and learn something new in this area.",
+  "work-btn": "View Works",
+  "download": "Download CV",
+  "location": "LOCATION: Gomel, Republick of Belarus",
+  "birth": "DATA OF BIRTH: 25.06.1994",
+  "education": "EDUCATION: 2014-2018 Gomel State University of Franziska Scarina.",
+  "speciality": "SPECIALITY: IT ingeener",
+  "courses": "COURSES: Development web websites using HTML, CSS and JavaScript to IT-Academy.",
+  "language": "LANGUAGE: Russia, English (B1)",
+  "list": "//Here is a list of technologies I have worked with",
+  "infoworks": "//I invite you to see my work",
+  "demo": "Demo",
+  "code": "Code"
+}
