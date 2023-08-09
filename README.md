@@ -1,70 +1,169 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-red-500 text-gray-300">{t("Works")}</p>
+          <p className="py-6">{t("infoworks")}</p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div style={{ backgroundImage: `url(${reactlaptopshop})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">Laptop React App</span>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">React</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/laptop-shop-test/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/laptop-shop-test" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${createx})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">Createx Web-site</span>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/Createx/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/Createx" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${ciprus})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">Ciprus Web-site</span>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/AppartamentOnCiprus/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/AppartamentOnCiprus" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${reactcoffee})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">Coffee React App</span>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">React</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/coffee-react-app/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/coffee-react-app" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${gomel})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-2xl font-bold text-white tracking-wider text-center">FCGomel Web-site</div>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS, Bootstrap</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/FCGomel/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/FCGomel" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${internetshop})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-2xl font-bold text-white tracking-wider text-center">InternetShop Web-site</div>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/InternetShop/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/InternetShop" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${sauna})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-2xl font-bold text-white tracking-wider text-center">Sauna Web-site</div>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/SaunaViza/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/SaunaViza" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${zoov})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-2xl font-bold text-white tracking-wider text-center">Zoov Web-site</div>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/Zoov/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/Zoov" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div style={{ backgroundImage: `url(${reacticecream})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-2xl font-bold text-white tracking-wider text-center">JS ToDo App</div>
+              <div className="text-2xl font-bold text-white tracking-wider text-center">JavaScript</div>
+              <div className="pt-8 text-center">
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://avngrss.github.io/MyTodoJS/" target="blank">
+                    {t("demo")}
+                  </a>
+                </button>
+                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <a href="https://github.com/Avngrss/MyTodoJS" target="blank">
+                    {t("code")}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

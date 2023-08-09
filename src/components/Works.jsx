@@ -1,4 +1,14 @@
+/* eslint-disable array-callback-return */
 import React from "react";
+
+import { Autoplay, Pagination, } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
 import createx from "../assets/createx.png";
 import ciprus from "../assets/ciprus.jpeg";
 import gomel from "../assets/gomel.jpg";
@@ -10,176 +20,64 @@ import reacticecream from "../assets/Reacticecream.png";
 import reactlaptopshop from "../assets/Reactlaptopshop.png";
 
 function Works({ t }) {
+  const works = [
+    {img: reactlaptopshop, title: "laptop-shop-test", git__link: "https://avngrss.github.io/laptop-shop-test/", code__link: "https://github.com/Avngrss/laptop-shop-test"},
+    {img: createx, title: "Createx", git__link: "https://avngrss.github.io/Createx/", code__link: "https://github.com/Avngrss/Createx"},
+    {img: ciprus, title: "AppartamentOnCiprus", git__link: "https://avngrss.github.io/AppartamentOnCiprus/", code__link: "https://github.com/Avngrss/AppartamentOnCiprus"},
+    {img: reactcoffee, title: "coffee-react-app/", git__link: "https://avngrss.github.io/coffee-react-app/", code__link: "https://github.com/Avngrss/coffee-react-app"},
+    {img: gomel, title: "FCGomel", git__link: "https://avngrss.github.io/FCGomel/", code__link: "https://github.com/Avngrss/FCGomel"},
+    {img: internetshop, title: "InternetShop", git__link: "https://avngrss.github.io/InternetShop/", code__link: "https://github.com/Avngrss/InternetShop"},
+    {img: sauna, title: "SaunaViza", git__link: "https://avngrss.github.io/SaunaViza/", code__link: "https://github.com/Avngrss/SaunaViza"},
+    {img: zoov, title: "Zoov", git__link: "https://avngrss.github.io/Zoov/", code__link: "https://github.com/Avngrss/Zoov"},
+    {img: reacticecream, title: "TodoJs", git__link: "ttps://avngrss.github.io/MyTodoJS/", code__link: "https://github.com/Avngrss/MyTodoJS"},
+  ];
   return (
-    <div name="works" className="w-full  pb-10 md:h-screen text-gray-300 bg-[#0a192f]">
+    <div name="works" className="w-full  pb-10 pt-10 text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto px-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-red-500 text-gray-300">{t("Works")}</p>
+        <div className="pt-10">
+          <p className="text-4xl font-bold inline border-b-4 border-red-500">{t("Works")}</p>
           <p className="py-6">{t("infoworks")}</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div style={{ backgroundImage: `url(${reactlaptopshop})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">Laptop React App</span>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">React</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/laptop-shop-test/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/laptop-shop-test" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${createx})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">Createx Web-site</span>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/Createx/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/Createx" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${ciprus})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">Ciprus Web-site</span>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/AppartamentOnCiprus/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/AppartamentOnCiprus" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${reactcoffee})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">Coffee React App</span>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">React</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/coffee-react-app/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/coffee-react-app" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${gomel})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-2xl font-bold text-white tracking-wider text-center">FCGomel Web-site</div>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS, Bootstrap</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/FCGomel/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/FCGomel" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${internetshop})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-2xl font-bold text-white tracking-wider text-center">InternetShop Web-site</div>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/InternetShop/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/InternetShop" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${sauna})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-2xl font-bold text-white tracking-wider text-center">Sauna Web-site</div>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/SaunaViza/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/SaunaViza" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${zoov})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-2xl font-bold text-white tracking-wider text-center">Zoov Web-site</div>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">HTML, SCSS, JS</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/Zoov/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/Zoov" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${reacticecream})` }} className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-2xl font-bold text-white tracking-wider text-center">JS ToDo App</div>
-              <div className="text-2xl font-bold text-white tracking-wider text-center">JavaScript</div>
-              <div className="pt-8 text-center">
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://avngrss.github.io/MyTodoJS/" target="blank">
-                    {t("demo")}
-                  </a>
-                </button>
-                <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                  <a href="https://github.com/Avngrss/MyTodoJS" target="blank">
-                    {t("code")}
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
+        <div className="lg: 2/3 w-full">
+        <Swiper 
+          modules={[Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={3}
+          loop={true}
+          autoplay={{
+            delay: 3000
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+            },
+            620: {
+              slidesPerView: 2,
+            },
+            425: {
+              slidesPerView: 1,
+            },
+            320: {
+              slidesPerView: 1,
+            }
+          }}
+          pagination={{ clickable: true }}
+        >
+          {
+            works.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div className="h-fit w-full p-4 bg-[#293a77] rounded-xl">
+                  <img src={item.img} alt="createx" className="rounded-lg" style={{width: "100%", height: "180px"}}/>
+                  <h3 className="text-xl my-4">{item.title}</h3>
+                  <div>
+                    <a href={item.code__link} className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block">Github</a>
+                    <a href={item.git__link} className="text-cyan-600 bg-gray-800 px-2 py-1 ml-2 inline-block">{t("demo")}</a>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))
+          }         
+        </Swiper>
         </div>
       </div>
     </div>

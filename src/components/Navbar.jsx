@@ -8,7 +8,7 @@ const Navbar = ({ changelanguage, t }) => {
   const [openMenu, setOpenMenu] = React.useState(false);
   const ShowMenu = () => setOpenMenu(!openMenu);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-200">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#2c4e80] text-gray-200">
       <div className="flex items-center justify-between gap-4">
         <img className="cursor-pointer hover:scale-150 duration-500" onClick={() => changelanguage("ru")} height="30px" width="30px" src={flagrussia} alt="flagrussia" />
         <img className="cursor-pointer hover:scale-150 duration-500" onClick={() => changelanguage("en")} height="30px" width="30px" src={flagengland} alt="flagengland" />

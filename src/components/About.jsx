@@ -1,4 +1,6 @@
 import React from "react";
+import cv from "../assets/CV.pdf";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 function About({ t }) {
   return (
@@ -28,6 +30,16 @@ function About({ t }) {
               <span className="font-bold">{t("language")}</span>
             </p>
           </div>
+          <div className="mx-4">
+          <a href={cv} download="cv">
+          <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+            {t("download")}
+            <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight className="ml-2" />
+            </span>
+          </button>
+          </a>
+        </div>
         </div>
       </div>
     </div>
