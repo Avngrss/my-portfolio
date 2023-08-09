@@ -21,10 +21,10 @@ import reactlaptopshop from "../assets/Reactlaptopshop.png";
 
 function Works({ t }) {
   const works = [
-    {img: reactlaptopshop, title: "laptop-shop-test", git__link: "https://avngrss.github.io/laptop-shop-test/", code__link: "https://github.com/Avngrss/laptop-shop-test"},
+    {img: reactlaptopshop, title: "LaptopShopTest", git__link: "https://avngrss.github.io/laptop-shop-test/", code__link: "https://github.com/Avngrss/laptop-shop-test"},
     {img: createx, title: "Createx", git__link: "https://avngrss.github.io/Createx/", code__link: "https://github.com/Avngrss/Createx"},
     {img: ciprus, title: "AppartamentOnCiprus", git__link: "https://avngrss.github.io/AppartamentOnCiprus/", code__link: "https://github.com/Avngrss/AppartamentOnCiprus"},
-    {img: reactcoffee, title: "coffee-react-app/", git__link: "https://avngrss.github.io/coffee-react-app/", code__link: "https://github.com/Avngrss/coffee-react-app"},
+    {img: reactcoffee, title: "CoffeeReactApp", git__link: "https://avngrss.github.io/coffee-react-app/", code__link: "https://github.com/Avngrss/coffee-react-app"},
     {img: gomel, title: "FCGomel", git__link: "https://avngrss.github.io/FCGomel/", code__link: "https://github.com/Avngrss/FCGomel"},
     {img: internetshop, title: "InternetShop", git__link: "https://avngrss.github.io/InternetShop/", code__link: "https://github.com/Avngrss/InternetShop"},
     {img: sauna, title: "SaunaViza", git__link: "https://avngrss.github.io/SaunaViza/", code__link: "https://github.com/Avngrss/SaunaViza"},
