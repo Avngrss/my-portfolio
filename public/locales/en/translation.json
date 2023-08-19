@@ -10,13 +10,12 @@
   "work-btn": "View Works",
   "download": "Download CV",
   "location": "LOCATION: Gomel, Republick of Belarus",
-  "birth": "DATA OF BIRTH: 25.06.1994",
   "education": "EDUCATION: 2014-2018 Gomel State University of Franziska Scarina.",
   "speciality": "SPECIALITY: IT ingeener",
   "courses": "COURSES: Development web websites using HTML, CSS and JavaScript to IT-Academy.",
   "language": "LANGUAGE: Russia, English (B1)",
   "list": "//Here is a list of technologies I have worked with",
-  "infoworks": "//I invite you to see my work",
+  "infoworks": "//There are the some my works",
   "demo": "Demo",
   "code": "Code"
 }

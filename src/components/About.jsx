@@ -8,14 +8,13 @@ function About({ t }) {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full px-4">
           <div className="pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-red-500">{t("About")}</p>
+            <p className="text-4xl font-bold inline border-b-4 border-red-500">
+              {t("About")}
+            </p>
           </div>
           <div>
             <p className="ml-4">
               <span className="font-bold">{t("location")}</span>
-            </p>
-            <p className="ml-4">
-              <span className="font-bold">{t("birth")}</span>
             </p>
             <p className="ml-4">
               <span className="font-bold">{t("education")}</span>
@@ -31,15 +30,15 @@ function About({ t }) {
             </p>
           </div>
           <div className="mx-4">
-          <a href={cv} download="cv">
-          <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
-            {t("download")}
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-2" />
-            </span>
-          </button>
-          </a>
-        </div>
+            <a href={cv} download="cv">
+              <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-red-500 hover:border-red-500">
+                {t("download")}
+                <span className="group-hover:rotate-90 duration-300">
+                  <HiArrowNarrowRight className="ml-2" />
+                </span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
