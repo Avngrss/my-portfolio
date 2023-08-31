@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../assets/CV.pdf";
+import cv from "../assets/cv.pdf";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 function About({ t }) {
